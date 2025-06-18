@@ -7,61 +7,61 @@
     <!-- Servlets from java.controller package -->
     <servlet>
         <servlet-name>CreateCampaignServlet</servlet-name>
-        <servlet-class>controller.CreateCampaignServlet</servlet-class>
+        <servlet-class>java.controller.CreateCampaignServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>DeleteCampaignServlet</servlet-name>
-        <servlet-class>controller.DeleteCampaignServlet</servlet-class>
+        <servlet-class>java.controller.DeleteCampaignServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>controller.LoginServlet</servlet-class>
+        <servlet-class>java.controller.LoginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UpdateCampaignServlet</servlet-name>
-        <servlet-class>controller.UpdateCampaignServlet</servlet-class>
+        <servlet-class>java.controller.UpdateCampaignServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ViewCampaignServlet</servlet-name>
-        <servlet-class>controller.ViewCampaignServlet</servlet-class>
+        <servlet-class>java.controller.ViewCampaignServlet</servlet-class>
     </servlet>
     
     <!-- Servlets from java package -->
     <servlet>
         <servlet-name>DeleteDonationServlet</servlet-name>
-        <servlet-class>DeleteDonationServlet</servlet-class>
+        <servlet-class>java.DeleteDonationServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>DonationServlet</servlet-name>
-        <servlet-class>DonationServlet</servlet-class>
+        <servlet-class>java.DonationServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UpdateDonationStatusServlet</servlet-name>
-        <servlet-class>UpdateDonationStatusServlet</servlet-class>
+        <servlet-class>java.UpdateDonationStatusServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UserCreateServlet</servlet-name>
-        <servlet-class>UserCreateServlet</servlet-class>
+        <servlet-class>java.UserCreateServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UserDeleteServlet</servlet-name>
-        <servlet-class>UserDeleteServlet</servlet-class>
+        <servlet-class>java.UserDeleteServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UserEditServlet</servlet-name>
-        <servlet-class>UserEditServlet</servlet-class>
+        <servlet-class>java.UserEditServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UserGetServlet</servlet-name>
-        <servlet-class>UserGetServlet</servlet-class>
+        <servlet-class>java.UserGetServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UserListServlet</servlet-name>
-        <servlet-class>UserListServlet</servlet-class>
+        <servlet-class>java.UserListServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UserUpdateServlet</servlet-name>
-        <servlet-class>UserUpdateServlet</servlet-class>
+        <servlet-class>java.UserUpdateServlet</servlet-class>
     </servlet>
 
     <!-- Servlet Mappings -->
