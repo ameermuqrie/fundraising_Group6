@@ -1,48 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<web-app version="3.1"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <!-- Servlets from java.controller package -->
     <servlet>
-        <servlet-name>ViewCampaignServlet</servlet-name>
-        <servlet-class>controller.ViewCampaignServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>UpdateCampaignServlet</servlet-name>
-        <servlet-class>controller.UpdateCampaignServlet</servlet-class>
+        <servlet-name>CreateCampaignServlet</servlet-name>
+        <servlet-class>controller.CreateCampaignServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>DeleteCampaignServlet</servlet-name>
         <servlet-class>controller.DeleteCampaignServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>CreateCampaignServlet</servlet-name>
-        <servlet-class>controller.CreateCampaignServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>controller.LoginServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>ViewCampaignServlet</servlet-name>
-        <url-pattern>/ViewCampaignServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
+    <servlet>
         <servlet-name>UpdateCampaignServlet</servlet-name>
-        <url-pattern>/UpdateCampaignServlet</url-pattern>
+        <servlet-class>controller.UpdateCampaignServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewCampaignServlet</servlet-name>
+        <servlet-class>controller.ViewCampaignServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlets from java package -->
+    <servlet>
+        <servlet-name>DeleteDonationServlet</servlet-name>
+        <servlet-class>DeleteDonationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DonationServlet</servlet-name>
+        <servlet-class>DonationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateDonationStatusServlet</servlet-name>
+        <servlet-class>UpdateDonationStatusServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserCreateServlet</servlet-name>
+        <servlet-class>UserCreateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <servlet-class>UserDeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserEditServlet</servlet-name>
+        <servlet-class>UserEditServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserGetServlet</servlet-name>
+        <servlet-class>UserGetServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserListServlet</servlet-name>
+        <servlet-class>UserListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <servlet-class>UserUpdateServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>CreateCampaignServlet</servlet-name>
+        <url-pattern>/CreateCampaignServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DeleteCampaignServlet</servlet-name>
         <url-pattern>/DeleteCampaignServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>CreateCampaignServlet</servlet-name>
-        <url-pattern>/CreateCampaignServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateCampaignServlet</servlet-name>
+        <url-pattern>/UpdateCampaignServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewCampaignServlet</servlet-name>
+        <url-pattern>/ViewCampaignServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteDonationServlet</servlet-name>
+        <url-pattern>/DeleteDonationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DonationServlet</servlet-name>
+        <url-pattern>/DonationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateDonationStatusServlet</servlet-name>
+        <url-pattern>/UpdateDonationStatusServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserCreateServlet</servlet-name>
+        <url-pattern>/UserCreateServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <url-pattern>/UserDeleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserEditServlet</servlet-name>
+        <url-pattern>/UserEditServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserGetServlet</servlet-name>
+        <url-pattern>/UserGetServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserListServlet</servlet-name>
+        <url-pattern>/UserListServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <url-pattern>/UserUpdateServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Session timeout -->
     <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
+        <session-timeout>30</session-timeout>
     </session-config>
+
 </web-app>
